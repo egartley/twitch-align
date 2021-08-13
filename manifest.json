@@ -1,0 +1,15 @@
+{
+    "name": "Twitch Align",
+    "description": "Makes the left sidebar on Twitch align with the Start button in Windows",
+    "version": "1.0",
+    "homepage_url": "https://github.com/egartley/twitch-align",
+    "manifest_version": 3,
+    "content_scripts":
+    [
+        {
+            "matches": ["https://*.twitch.tv/*", "https://twitch.tv/*"],
+            "run_at": "document_end",
+            "css": ["fix.css"]
+        }
+    ]
+}
